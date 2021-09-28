@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".rate">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/dollar_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:paddingBottom="16dp"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/euro_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:paddingBottom="16dp"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/won_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:paddingBottom="16dp"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openOne"
+            android:text="SAVE" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
