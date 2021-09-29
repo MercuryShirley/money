@@ -34,9 +34,14 @@ public class rate extends AppCompatActivity {
         config.putExtra("dollar_rate1",dollar_rate);
         config.putExtra("euro_rate1",euro_rate);
         config.putExtra("won_rate1",won_rate);
+
+        //将rate数据存入myrate文档里
+
         startActivityForResult(config,1);
         //关闭当前窗口
         finish();
     }
+
+
 
 }
